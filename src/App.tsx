@@ -24,7 +24,6 @@ function App() {
     e.preventDefault();
 
     const newTodo: Todo = {
-      //@ts-ignore
       title: e.target.text.value,
       completed: false,
       id: Math.random()
@@ -32,8 +31,6 @@ function App() {
 
     const updatedTodos = addTodo(todos, newTodo);
     setTodos(updatedTodos);
-
-    //@ts-ignore
     e.target.reset();
   };
 
